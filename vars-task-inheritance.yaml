@@ -15,6 +15,6 @@
   vars : 
      TASKS: Roboshop 
      TYPE : Practice
-    ansible.builtin.debug:
+  ansible.builtin.debug:
       msg: "course : {{COURSE}} , tasks : {{TASKS}} , type : {{Practice}}"
       
