@@ -1,6 +1,5 @@
 - name: variables at task level
   hosts: localhost
-
   vars: 
     COURSE : DevOps
     DURATION : 3months 
