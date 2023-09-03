@@ -1,6 +1,6 @@
 - name: variables in ansible 
   hosts: mongodb 
-  vars: 
+  variables-file: 
   - variables-files.yaml  
 
   tasks:
