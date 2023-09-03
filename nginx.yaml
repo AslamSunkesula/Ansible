@@ -1,5 +1,5 @@
 - name : Install and run the nginx #not mandatory but it's good practice in organization
-  hots : mongodb 
+  hosts : mongodb 
 tasks:
 - name: Install nginx 
   ansible.builtin.yum:
