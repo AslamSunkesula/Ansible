@@ -1,6 +1,6 @@
 - name: vars from inventory
   hosts: mongodb
   tasks:
-    - name: print mongo username
-      ansible.builtin.debug:
-        msg: "username : {{mongo_username}}"
+  - name: print mongo username
+    ansible.builtin.debug:
+      msg: "username : {{mongo_username}}"
