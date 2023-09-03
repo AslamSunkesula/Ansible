@@ -10,7 +10,7 @@
       msg: "course : {{COURSE}}, duration : {{DURATION}}"
   - name: inherit values from play and add and override
     vars:
-      MONEY:"20K"
+      MONEY: "20K"
     ansible.builtin.debug:
       msf: "money : {{MONEY}}"
      
