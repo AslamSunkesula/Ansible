@@ -1,0 +1,20 @@
+- name : Accessing the variables at task level 
+  hosts : localhost 
+  #play level
+  vars : 
+    COURSE: DevOps
+    LEARNIG_MODULE: Ansible
+    DURATION: 3months 
+  task : 
+  - name : inherit vars from play level
+    ansible.builtin.debug:
+      msg: "course : {{COURSE}} , learning_module : {{LEARNIG_MODULE}} , duration : {{DURATION}}"
+  task : 
+  - name : inherit vars from play level
+    TASKS: Roboshop 
+    TYPE : Practice
+    ansible.builtin.debug:
+      msg: "course : {{COURSE}} , tasks : {{TASKS}} , type : {{Practice}}"
+      
+      
+
