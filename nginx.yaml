@@ -1,0 +1,11 @@
+- name : Install and run the nginx #not mandatory but it's good practice in organization
+  hots : mongodb 
+tasks:
+- name: Install nginx 
+  ansible.builtin.yum:
+    name : nginx
+    state : installed 
+- name: Start nginx 
+  ansible.builtin.service:
+    name: nginx
+    state: started
