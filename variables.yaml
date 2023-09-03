@@ -2,5 +2,5 @@
   hosts : mongodb 
   tasks :
      name : print the hellow world 
-       ansible.builtin.debug:
+       ansible.builtin.debug
          msg:"hello , Iam learning ansible"
