@@ -1,6 +1,12 @@
 - name: variables in ansible 
   hosts: mongodb 
+  vars: 
+    COURSE : DevOps
+    LEARNIG_MODULE : Ansible
+    DURATION : 3months     
+
   tasks:
   - name: print the hellow world 
     ansible.builtin.debug:
-      msg: "hello , Iam learning ansible"
+    #it should always in double quotes
+      msg: "hello , Iam {{LEARNIG_MODULE}} , in {{COURSE}}  the duration is {{DURATION}}"
