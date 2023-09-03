@@ -9,4 +9,4 @@
   - name: print the hellow world 
     ansible.builtin.debug:
     #it should always in double quotes
-      msg: "hello , Iam {{LEARNIG_MODULE}} , in {{COURSE}}  the duration is {{DURATION}}"
+      msg: "hello , Iam learning {{LEARNIG_MODULE}} , in {{COURSE}}  the duration is {{DURATION}}"
