@@ -1,4 +1,4 @@
-- name : Accessing the variables at task level 
+- name: variables at task level
   hosts : localhost 
   #play level
   vars : 
@@ -9,8 +9,8 @@
   - name : inherit vars from play level
     ansible.builtin.debug:
       msg: "course : {{COURSE}} , learning_module : {{LEARNIG_MODULE}} , duration : {{DURATION}}"
-  task : 
   - name : inherit vars from play level
+  vars : 
     TASKS: Roboshop 
     TYPE : Practice
     ansible.builtin.debug:
