@@ -1,7 +1,7 @@
 - name: variables in ansible
-  hosts: mongodb
+  hosts: localhost #managing the ansible server itself
   variables-file:
-    - variables-files.yaml
+  - variables-files.yaml
   tasks:
   - name: print the hello world
     ansible.builtin.debug:
