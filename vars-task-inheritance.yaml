@@ -2,7 +2,7 @@
   hosts : localhost 
   #play level
   vars : 
-    COURSE: DevOps
+  - COURSE: DevOps
     LEARNIG_MODULE: Ansible
     DURATION: 3months 
   task : 
@@ -10,9 +10,9 @@
     ansible.builtin.debug:
       msg: "course : {{COURSE}} , learning_module : {{LEARNIG_MODULE}} , duration : {{DURATION}}"
   - name : inherit vars from play level
-  vars : 
-    TASKS: Roboshop 
-    TYPE : Practice
+    vars : 
+    - TASKS: Roboshop 
+      TYPE : Practice
     ansible.builtin.debug:
       msg: "course : {{COURSE}} , tasks : {{TASKS}} , type : {{Practice}}"
       
