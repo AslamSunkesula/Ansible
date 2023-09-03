@@ -13,8 +13,8 @@
       msg: "course : {{COURSE}} , learning_module : {{LEARNIG_MODULE}} , duration : {{DURATION}}"
   - name : inherit vars from play level
   vars : 
-    TASKS: Roboshop 
-    TYPE : Practice
+     TASKS: Roboshop 
+     TYPE : Practice
     ansible.builtin.debug:
       msg: "course : {{COURSE}} , tasks : {{TASKS}} , type : {{Practice}}"
       
