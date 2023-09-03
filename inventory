@@ -1,2 +1,6 @@
 [mongodb]
 52.91.108.188
+
+[mongodb:vars]
+mongo_username=mongoadmin
+mongo_type:No sql DB
