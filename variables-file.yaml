@@ -1,9 +1,11 @@
 - name: variables in ansible
   hosts: localhost #managing the ansible server itself
   variables-file:
-  - variables-files.yaml
+  - variables.yaml
   tasks:
   - name: print the hello world
     ansible.builtin.debug:
         #it should always in double quotes
       msg: "hello , Iam learning {{LEARNIG_MODULE}} , in {{COURSE}}  the duration is {{DURATION}}"
+
+
