@@ -4,3 +4,4 @@
 [mongodb:vars]
 mongo_username=mongoadmin
 mongo_type:DB
+NAME:Aslam
