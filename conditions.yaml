@@ -9,5 +9,14 @@
   - name: print the output
     ansible.builtin.debug:
       msg: "out put is {{output}}"
+  - name: print the exit status
+    ansible.builtin.debug:
+      msg: "{{output.rc}}"
+  # - name: create user roboshop
+  #   become: yes
+  #   ansible.builtin.user:
+  #     name: roboshop
+  #   when: output != 0
+
 
 
