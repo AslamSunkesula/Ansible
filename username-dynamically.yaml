@@ -1,0 +1,22 @@
+- name: create user
+  hosts: localhost
+
+  vars: 
+    Entered_username = 
+
+  tasks: 
+  - name : check if user exits or not 
+    ansible.builtin.command: {{Entered_username}}
+    ignore_errors: yes
+    register : output 
+
+  - name: print exit status
+    ansible.builtin.debug:
+      msg: "{{out.rc}}"
+  - when: output.rc != 0
+
+ - name: create a user
+   become : yes
+   ansible.builtin.user:
+     msg :  "Username {{Entered_username}}"
+  
