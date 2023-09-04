@@ -3,5 +3,5 @@
   tasks:
   - name: print variables from commnad line
     ansible.builtin.debug:
-      msg: "lets lear the {{COURSE}} course"
+      msg: "lets enjoy the {{COURSE}} course"
 
