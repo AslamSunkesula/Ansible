@@ -16,7 +16,7 @@
   - name: print exit status
     ansible.builtin.debug:
       msg: "{{output.rc}}"
-  - when: output.rc != 0
+    when: output.rc != 0
 
   - name: create user roboshop
     become: yes # we need sudo access for this task only
