@@ -1,7 +1,8 @@
 - name: create user
   hosts: localhost
 
-  vars: Entered_username =
+  vars: 
+    Entered_username : 
 
   tasks:
   - name: check if user exits or not
