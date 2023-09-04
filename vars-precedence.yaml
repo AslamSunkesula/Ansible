@@ -2,8 +2,8 @@
   hosts: mongodb
   vars:
     NAME: Aslam-play
-  vars_files:
-  - variables.yaml
+  # vars_files:
+  # - variables.yaml
   vars_prompt:
   - name: NAME
     prompt: Please enter your name
