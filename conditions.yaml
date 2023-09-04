@@ -8,6 +8,6 @@
     ignore_errors: true
   - name: print the output
     ansible.builtin.debug:
-      msg: "out put is {{outpust}}"
+      msg: "out put is {{output}}"
 
 
