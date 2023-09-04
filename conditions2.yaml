@@ -10,4 +10,4 @@
   - name : print the condition 
     ansible.builtin.debug:
       msg :  "Hello {{NAME}}"
-    when == "Devops"
+    when : NAME == "Devops"
