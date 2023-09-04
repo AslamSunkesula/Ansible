@@ -13,7 +13,7 @@
   - name: print exit status
     ansible.builtin.debug:
       msg: "{{output.rc}}"
-  - when: output.rc != 0
+    when: output.rc != 0
 
  - name: create a user
    become : yes
