@@ -2,7 +2,7 @@
   hosts: localhost
 
   vars: 
-    Entered_username = 
+    Entered_username =  
 
   tasks: 
   - name : check if user exits or not 
@@ -12,7 +12,7 @@
 
   - name: print exit status
     ansible.builtin.debug:
-      msg: "{{out.rc}}"
+      msg: "{{output.rc}}"
   - when: output.rc != 0
 
  - name: create a user
