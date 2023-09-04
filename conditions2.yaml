@@ -2,9 +2,7 @@
   hosts : localhost 
   
   vars_prompt:
-  - name : NAME
-    prompt : please enter the NAME 
-    private : false 
+    NAME : devops 
 
   tasks :
   - name : print the condition 
