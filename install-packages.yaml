@@ -1,27 +1,27 @@
-# - name: install the packages
+- name : install the packages 
+  hosts : mongodb
+  become: yes
+  tasks: 
+  - name: install packages 
+    ansible.builtin.yum:
+      name : 
+      state: installed 
+  loop:
+  - nginx
+  - postfix
+    
+
+# - name: install packages
 #   hosts: mongodb
 #   become: yes
 #   tasks:
-#   - name: install packages
+#   - name: install package
 #     ansible.builtin.yum:
 #       name: "{{item}}"
 #       state: installed
-#   loop:
-#   - nginx
-#   - postfix
-
-
-- name: install packages
-  hosts: mongodb
-  become: yes
-  tasks:
-  - name: install package
-    ansible.builtin.yum:
-      name: "{{item}}"
-      state: installed
-    # list of string
-    loop:
-    - nginx
-    - postfix
-    - cyrus-sasl-plain
-    - mailx
+#     # list of string
+#     loop:
+#     - nginx
+#     - postfix
+#     - cyrus-sasl-plain
+#     - mailx

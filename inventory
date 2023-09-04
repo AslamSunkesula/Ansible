@@ -1,5 +1,5 @@
 [mongodb]
-54.209.81.26
+52.90.191.71
 
 [mongodb:vars]
 mongo_username=mongoadmin
