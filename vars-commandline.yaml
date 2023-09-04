@@ -1,0 +1,7 @@
+- name: variables form the command line
+  hosts: localhost
+  tasks:
+  - name: print variables from commnad line
+    ansible.builtin.debug:
+      msg: "lets lear the {{Course}} course"
+
