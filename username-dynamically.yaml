@@ -5,7 +5,7 @@
 
   tasks:
   - name: check if user exits or not
-    ansible.builtin.command: {? {Entered_username: ''} : ''}
+    ansible.builtin.command: id Entered_username
     ignore_errors: yes
     register: output
 
