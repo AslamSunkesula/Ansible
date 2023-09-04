@@ -1,6 +1,6 @@
 [mongodb]
 52.90.191.71
-
+ 
 [mongodb:vars]
 mongo_username=mongoadmin
 mongo_type:DB
