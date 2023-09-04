@@ -1,0 +1,13 @@
+- name: create a user #check if user is already exits or not if not , create a user 
+  hosts: localhosts
+
+  tasks:
+  - name: check the roboshop exits or not
+    ansible.builtin.command: id Roboshop
+    register: output
+    ignore_errors: true
+
+    ansible.builtin.debug:
+      msg: "out put is {{outpust}}"
+
+
