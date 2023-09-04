@@ -1,11 +1,11 @@
-- name : loops example
-  hots : localhost 
+- name: loops example
+  hosts: localhost 
 
-  tasks : 
-  - name : print the names
+  tasks: 
+  - name: print the names
     ansible.builtin.debug:
-      msg : "Hello {{item}}"
-    loops : 
+      msg: "Hello {{item}}"
+    loops: 
     - Aslam
     - Bhavya
     - Anisha
